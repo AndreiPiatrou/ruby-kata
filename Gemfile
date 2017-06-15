@@ -5,3 +5,5 @@ gemspec
 
 gem 'minitest-ci'
 gem 'rspec_junit_formatter'
+
+gem 'codecov', :require => false, :group => :test
