@@ -3,6 +3,9 @@ machine:
     America/Los_Angeles
   ruby:
     version: 2.4.1
+  dependencies:
+    pre:
+      - gem install bundler -pre
 test:
   override:
     - bundle exec rake test TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS/reports":
