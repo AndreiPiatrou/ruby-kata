@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "ruby_kata"
   spec.version       = RubyKata::VERSION
   spec.authors       = ["Andrey"]
-  spec.email         = ["a.petrov@itransition.com"]
+  spec.email         = ["19graff91@gmail.com"]
 
   spec.summary       = 'Simple project for Ruby kata'
   spec.description   = 'Ruby kata'
