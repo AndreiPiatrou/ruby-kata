@@ -18,5 +18,5 @@ class BubbleSort
     	end
 
     	array
-	end
+    end
 end
