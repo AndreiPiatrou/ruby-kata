@@ -1,0 +1,24 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    America/Los_Angeles # Set the timezone
+
+  # Version of ruby to use
+  ruby:
+    version: 2.4.1
+
+  override:
+    - bundle install: # note ':' here
+        timeout: 180 # fail if command has no output for 3 minutes
+        # IMPORTANT NOTE: ^^ the timeout modifier above must be
+        # double indented (four spaces) from the previous line
+
+## Customize test commands
+test:
+  override:
+    - bundle exec rake test TESTOPTS="--ci-dir=$CIRCLE_TEST_REPORTS/reports":
+        parallel: true
+        files:
+          - test/**/*_test.rb
+    - bundle exec rspec --format progress --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec.xml
