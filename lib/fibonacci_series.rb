@@ -6,8 +6,8 @@ class FibonacciSeries
 
     def each
         yield(@current)
-        
-        while @current < 999
+
+        while true
             yield(@current)
 
             temp = @current
