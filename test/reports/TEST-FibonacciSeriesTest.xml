@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000028' skipped='0' failures='0' errors='0' name="FibonacciSeriesTest" assertions='1' tests='1'>
+  <testcase time='0.000028' file="test/fibonacci_teries_test.rb" name="test_iterates_through_correct_series" assertions='1'>
+  </testcase>
+</testsuite>

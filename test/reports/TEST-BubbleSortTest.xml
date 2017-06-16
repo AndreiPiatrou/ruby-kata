@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000158' skipped='0' failures='0' errors='0' name="BubbleSortTest" assertions='5' tests='4'>
+  <testcase time='0.000032' file="test/bubble_sort_test.rb" name="test_returns_sorted_array_by_asc_by_default" assertions='1'>
+  </testcase>
+  <testcase time='0.000103' file="test/bubble_sort_test.rb" name="test_returns_sorted_array_by_desc" assertions='1'>
+  </testcase>
+  <testcase time='0.000010' file="test/bubble_sort_test.rb" name="test_returns_nil_on_nil_argument" assertions='1'>
+  </testcase>
+  <testcase time='0.000013' file="test/bubble_sort_test.rb" name="test_returns_empty_array_on_empty_argument" assertions='2'>
+  </testcase>
+</testsuite>
