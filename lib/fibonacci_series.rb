@@ -5,7 +5,7 @@ class FibonacciSeries
 
         yield(current)
 
-        while true
+        loop do
             yield(current)
 
             temp = current
