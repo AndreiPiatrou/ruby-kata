@@ -1,18 +1,16 @@
 class FibonacciSeries
-    def initialize
-        @prev = 1;
-        @current = 1;
-    end
-
     def each
-        yield(@current)
+        prev = 1
+        current = 1
+
+        yield(current)
 
         while true
-            yield(@current)
+            yield(current)
 
-            temp = @current
-            @current = @prev + temp
-            @prev = temp
+            temp = current
+            current += prev
+            prev = temp
         end
     end
 end
