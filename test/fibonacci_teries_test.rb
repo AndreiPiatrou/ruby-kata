@@ -22,11 +22,13 @@ class FibonacciSeriesTest < Minitest::Test
 
         assert_equal([1, 1, 2, 3, 5, 8, 13, 21, 34, 55], actual)
     end
+
     def test_rreturns_single_item_array
         actual = @series.until_element_at(0)
 
         assert_equal([1], actual)
     end
+    
     def test_raises_argument_error_on_negative_argument
         assert_raises ArgumentError do 
             @series.until_element_at(-1)
