@@ -22,9 +22,7 @@ class FibonacciSeries
 
         self.each do |item|
             result << item
-            break if ( ( index -= 1 ) < 0 )
+            return result if ( ( index -= 1 ) < 0 )
         end
-
-        result
     end
 end
